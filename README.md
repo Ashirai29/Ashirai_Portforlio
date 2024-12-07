@@ -4,7 +4,7 @@
 I'm Ashley, a driven and passionate individual pursuing a career in **software engineering**. Born on **August 29, 2005**, I'm currently in my first year of studies.
 
 ## Academic Background
-Initially, I was enrolled in a **Bachelor of Computer Information Systems** program. However, I've since applied to change my major to **BSc in IT**, with a focus on **Computer Science and Business Management**. This change aligns better with my career aspirations and provides a more comprehensive skill set for the job market.
+Initially, I was enrolled in a **Bachelor of Computer Information Systems** program at the Univercity of Free State. However, I've since applied to change my major to **BSc in IT**, with a focus on **Computer Science and Business Management**. This change aligns better with my career aspirations and provides a more comprehensive skill set for the job market.
 
 ## Career Goals
 My ultimate goal is to become a versatile **software engineer**, capable of excelling in various domains, including:
@@ -29,4 +29,4 @@ I'm excited to explore the vast opportunities in the tech industry and make mean
 - **GitHub**: *placeholder*
 
 ## Stay Tuned
-I'm constantly learning and exploring new technologies. Stay updated on my journey by following me on GitHub!
+I'm constantly learning and exploring new technologies. Stay updated on my journey by following me on GitHub! 
