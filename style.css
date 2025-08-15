@@ -106,6 +106,35 @@ main {
     max-width: 900px;
     margin: 0 auto;
 }
+#projects {
+        text-align: center; /* Centers the section heading */
+        margin: 40px 0;
+    }
+
+    table {
+        margin: 0 auto; /* Centers the table horizontally */
+        border-collapse: collapse;
+        width: 80%; /* Makes table wider */
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 12px 15px;
+        text-align: left; /* Aligns text in cells */
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    p {
+        margin-top: 15px;
+        font-style: italic;
+    }
 
 section {
     background: linear-gradient(to right, #222, #444);
@@ -233,3 +262,4 @@ footer {
             margin: 0.5rem 0;
         }
 }
+
