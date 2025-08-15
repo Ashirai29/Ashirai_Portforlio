@@ -9,30 +9,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form submission with a custom message
-    document.getElementById('contactForm').addEventListener('submit', event => {
-        event.preventDefault();
-        alert('Thank you for your message! Ashley will get back to you soon.');
-    });
+    
 
-    // Modal for viewing profile image
+    // Modal for profile image
     const profileImage = document.getElementById('profileImage');
-    const modal = document.getElementById('imageModal');
-    const modalImage = document.getElementById('modalImage');
-    const closeBtn = document.querySelector('.close');
+    const modal = document.createElement('div');
+    const modalImage = document.createElement('img');
+    const closeButton = document.createElement('span');
 
-    // Show modal with full-view image
+    modal.style.display = 'none';
+    modal.style.position = 'fixed';
+    modal.style.top = 0;
+    modal.style.left = 0;
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+    modal.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+    modal.style.zIndex = 1000;
+
+    closeButton.textContent = '×';
+    closeButton.style.position = 'absolute';
+    closeButton.style.top = '20px';
+    closeButton.style.right = '35px';
+    closeButton.style.fontSize = '40px';
+    closeButton.style.color = '#fff';
+    closeButton.style.cursor = 'pointer';
+
+    modalImage.style.maxWidth = '90%';
+    modalImage.style.maxHeight = '80%';
+
+    modal.appendChild(closeButton);
+    modal.appendChild(modalImage);
+    document.body.appendChild(modal);
+
     profileImage.addEventListener('click', () => {
-        modal.style.display = 'block';
+        modal.style.display = 'flex';
         modalImage.src = profileImage.src;
     });
 
-    // Close modal when clicking the close button
-    closeBtn.addEventListener('click', () => {
+    closeButton.addEventListener('click', () => {
         modal.style.display = 'none';
     });
 
-    // Close modal when clicking outside the image
     modal.addEventListener('click', event => {
         if (event.target === modal) {
             modal.style.display = 'none';
